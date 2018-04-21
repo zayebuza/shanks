@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="online">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="hospital">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="sys"/>
+    <table id="7" parent="2" name="hospital"/>
+    <column id="8" parent="7" name="id">
+      <Position>1</Position>
+      <Comment>id</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="9" parent="7" name="name">
+      <Position>2</Position>
+      <Comment>医院名称</Comment>
+      <DataType>char(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="10" parent="7" name="level">
+      <Position>3</Position>
+      <Comment>医院等级</Comment>
+      <DataType>char(2)|0</DataType>
+    </column>
+    <column id="11" parent="7" name="city">
+      <Position>4</Position>
+      <Comment>医院所在城市</Comment>
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="12" parent="7" name="lonAndLat">
+      <Position>5</Position>
+      <Comment>医院经纬度，json表示。暂时没有用到</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="13" parent="7" name="latitude">
+      <Position>6</Position>
+      <Comment>纬度</Comment>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="14" parent="7" name="longitude">
+      <Position>7</Position>
+      <Comment>经度</Comment>
+      <DataType>double|0</DataType>
+    </column>
+    <key id="15" parent="7" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
