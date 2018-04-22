@@ -147,7 +147,7 @@
 		<!--配置Maven 对resource文件 过滤 -->
 		<resources>
 			<resource>
-				<directory>hospital/src/main/resources</directory>
+				<directory>src/main/resources</directory>
 				<includes>
 					<include>**/*.properties</include>
 					<include>**/*.xml</include>
@@ -155,7 +155,7 @@
 				<filtering>true</filtering>
 			</resource>
 			<resource>
-				<directory>hospital/src/main/java</directory>
+				<directory>src/main/java</directory>
 				<includes>
 					<include>**/*.properties</include>
 					<include>**/*.xml</include>
